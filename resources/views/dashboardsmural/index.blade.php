@@ -24,7 +24,7 @@
 </header>
 
 <section class="bg-orange-100 py-12">
-  <div class="max-w-3xl mx-auto text-center font-serif"">
+  <div class="max-w-3xl mx-auto text-center font-serif">
     <p class="mb-6">
         O mural é um espaço de trabalho colaborativo que permite a criação e organização de quadros, listas e cartões para gerenciar projetos, tarefas e ideias. É uma ferramenta visual que facilita a colaboração em equipe, permitindo que os membros adicionem, editem e comentem em tempo real. Com o mural, é possível visualizar o progresso das atividades, atribuir responsabilidades e acompanhar prazos, tudo em um ambiente intuitivo e fácil de usar.    </p>
   </div>
@@ -59,6 +59,7 @@
   <div class="max-w-2xl mx-auto">
     <div class="h-16 bg-slate-900 rounded-t-3xl shadow-lg"></div>
   </div>
+  
 </footer>
 
   
