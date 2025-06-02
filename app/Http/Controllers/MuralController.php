@@ -12,7 +12,8 @@ class MuralController extends Controller
      */
     public function index()
     {
-        return view('dashboardsmural.index');
+        $itens = Mural::all(); 
+        return view('dashboardsmural.index', compact('itens'));
     }
 
     /**
