@@ -6,12 +6,8 @@ use App\Http\Controllers\MuralController;
 
 Route::get('/', function () {
     return view('dashboardsmural.index');
-});
+})->name('dashboardsmural.index');
 
-Route::get('/create', function () {
-    return view('dashboardsmural.registermural');
-})->name('dashboardsmural.registermural');
-// Exibe a view de login
 Route::get('/loginmural', function () {
     return view('dashboardsmural.loginmural');
 })->name('dashboardsmural.loginmural');
@@ -24,11 +20,14 @@ Route::get('/senha', function () {
     return view('dashboardsmural.esqueci-asenha');
 })->name('dashboardsmural.esqueci-asenha');
 
+Route::get('/usuario/registrar', function () {
+    return view('dashboardsmural.registermural');
+})->name('dashboardsmural.registermural');
 
+Route::get('/vermural', [MuralController::class, 'index'])->name('dashboardsmural.vermural');
 
-
-
-
+Route::get('/mural/novo', [MuralController::class, 'create'])
+    ->name('dashboardsmural.escrevermural');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
