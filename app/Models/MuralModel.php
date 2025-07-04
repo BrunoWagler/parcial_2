@@ -2,14 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class MuralModel extends Model
+class MuralModel
 {
-    protected $table = 'murais';
-
-    protected $fillable = [
-        'titulo',
-        'descricao',
-    ];
+    public static function all()
+    {
+      
+        return [
+            [
+                'titulo' => 'Aviso importante',
+                'descricao' => 'As aulas serão suspensas amanhã.',
+            ],
+            [
+                'titulo' => 'Evento cultural',
+                'descricao' => 'Participe da feira de talentos no auditório.',
+            ],
+        ];
+    }
 }
